@@ -1,7 +1,66 @@
+/*config-columns*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 /*CSS Reset*/
 
 *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+}
+
+/*config-gerais*/
+
+.container-geral{
+	border: 3px solid red;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ff9800;
+}
+
+.container-tabuleiro{
+	height: 400px; 
+	width: 400px;
+}
+
+.col-4{
+	height: 33.33%;
+	float: left;
+	/*background: blue;*/
+}
+
+.r1-1, .r1-3, .r2-1, .r2-3{
+	border-bottom:10px solid blue;
+	} 
+
+.r1-2, .r3-2{
+	border-right: 10px solid blue;
+	border-left: 10px solid  blue;
+	}
+
+.r1-2{
+	border-bottom: 10px solid blue;
+	}
+.r2-2{
+	border-bottom: 10px solid blue;
+	border-left: 10px solid blue;
+	border-right: 10px solid blue;
+}
+
+.r1-1:hover, .r1-2:hover, .r1-3:hover, .r2-1:hover, .r2-2:hover, .r2-3:hover, .r3-1:hover, .r3-2:hover, .r3-3:hover {
+	background-color: #d5912d;
 }
