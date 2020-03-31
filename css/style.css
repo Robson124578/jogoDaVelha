@@ -23,44 +23,62 @@
 
 /*config-gerais*/
 
+body{
+	font-family: 'Orbitron', sans-serif;
+	background-image: linear-gradient(to bottom right, #154ef6, #68ff0a);
+}
+
+/*conf. do Header*/
+
+.header-title{
+	text-shadow: 3px 4px 10px #fff;
+	margin: 10px;
+	text-align: center;
+}
+
 .container-geral{
-	border: 3px solid red;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #ff9800;
 }
 
 .container-tabuleiro{
 	height: 400px; 
 	width: 400px;
+	box-shadow: 20px 20px 40px #000;
 }
 
 .col-4{
 	height: 33.33%;
 	float: left;
-	/*background: blue;*/
 }
 
 .r1-1, .r1-3, .r2-1, .r2-3{
-	border-bottom:10px solid blue;
+	border-bottom:10px solid #000;
 	} 
 
 .r1-2, .r3-2{
-	border-right: 10px solid blue;
-	border-left: 10px solid  blue;
+	border-right: 10px solid #000;
+	border-left: 10px solid  #000;
 	}
 
 .r1-2{
-	border-bottom: 10px solid blue;
+	border-bottom: 10px solid #000;
 	}
 .r2-2{
-	border-bottom: 10px solid blue;
-	border-left: 10px solid blue;
-	border-right: 10px solid blue;
+	border-bottom: 10px solid #000;
+	border-left: 10px solid #000;
+	border-right: 10px solid #000;
 }
 
 .r1-1:hover, .r1-2:hover, .r1-3:hover, .r2-1:hover, .r2-2:hover, .r2-3:hover, .r3-1:hover, .r3-2:hover, .r3-3:hover {
-	background-color: #d5912d;
+	background-color: #1651f2;
+}
+
+/*configurações dos elementos X e 0*/
+
+.el-x{
+	height: 100%;
+	width: 100%;
 }
